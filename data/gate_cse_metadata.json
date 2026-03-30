@@ -1,0 +1,117 @@
+{
+  "description": "Metadata for GATE CSE related books generated from GATEOverflow",
+  "source": "https://gateoverflow.in",
+  "repository": "https://github.com/GATEOverflow/GO-PDFs",
+  "books": [
+    {
+      "name": "GATE Overflow for GATE CSE - Volume 1",
+      "variant": "go-cse,vol1",
+      "exam": "GATE CSE",
+      "html_file": "book_filter1_volume1.html",
+      "pdf_file": "filter1_volume1.pdf",
+      "pdf_with_cover": "gatecse-volume1_w_cover.pdf",
+      "cover_file": "vol1-cover.pdf",
+      "release_tag": "gatecse-2025",
+      "github_release_id": "161340981",
+      "asset_name": "volume1.pdf",
+      "mlc_command": "mlcr make,go,pdf,_go-cse,_vol1",
+      "contents": [
+        "General Aptitude",
+        "Engineering Mathematics",
+        "Discrete Mathematics"
+      ]
+    },
+    {
+      "name": "GATE Overflow for GATE CSE - Volume 2",
+      "variant": "go-cse,vol2",
+      "exam": "GATE CSE",
+      "html_file": "book_filter1_volume2.html",
+      "pdf_file": "filter1_volume2.pdf",
+      "pdf_with_cover": "gatecse-volume2_w_cover.pdf",
+      "cover_file": "vol2-cover.pdf",
+      "release_tag": "gatecse-2025",
+      "github_release_id": "161340981",
+      "asset_name": "volume2.pdf",
+      "mlc_command": "mlcr make,go,pdf,_go-cse,_vol2",
+      "contents": [
+        "Algorithms",
+        "Data Structures",
+        "Programming",
+        "Compiler Design",
+        "CO & Architecture",
+        "Operating Systems",
+        "Databases",
+        "Computer Networks",
+        "Digital Logic",
+        "Theory of Computation"
+      ]
+    },
+    {
+      "name": "GATE Overflow for GATE CSE - Volume 3",
+      "variant": "go-cse,vol3",
+      "exam": "GATE CSE",
+      "html_file": "book_filter1_volume3.html",
+      "pdf_file": "filter1_volume3.pdf",
+      "pdf_with_cover": "gatecse-volume3_w_cover.pdf",
+      "cover_file": "vol3-cover.pdf",
+      "release_tag": "gatecse-2025",
+      "github_release_id": "161340981",
+      "asset_name": "volume3.pdf",
+      "mlc_command": "mlcr make,go,pdf,_go-cse,_vol3"
+    },
+    {
+      "name": "GATE Overflow for ISRO CSE",
+      "variant": "go-cse,isro",
+      "exam": "ISRO CSE",
+      "html_file": "book_filter2.html",
+      "pdf_file": "isro.pdf",
+      "pdf_with_cover": "isro_w_cover.pdf",
+      "cover_file": "isro-cse-cover.pdf",
+      "release_tag": "isro",
+      "github_release_id": "83673249",
+      "mlc_command": "mlcr make,go,pdf,_go-cse,_isro"
+    },
+    {
+      "name": "GATE Overflow for NIELIT CSE",
+      "variant": "go-cse,nielit",
+      "exam": "NIELIT CSE",
+      "html_file": "book_filter4.html",
+      "pdf_file": "nielit.pdf",
+      "pdf_with_cover": "nielit_w_cover.pdf",
+      "cover_file": "nielit-cse-cover.pdf",
+      "release_tag": "NIELIT",
+      "github_release_id": "83673170",
+      "mlc_command": "mlcr make,go,pdf,_go-cse,_nielit"
+    },
+    {
+      "name": "GATE Overflow for TIFR CSE",
+      "variant": "go-cse,tifr",
+      "exam": "TIFR CSE",
+      "html_file": "book_filter5.html",
+      "pdf_file": "tifr.pdf",
+      "pdf_with_cover": "tifr_w_cover.pdf",
+      "cover_file": "tifr-cse-cover.pdf",
+      "release_tag": "tifr",
+      "github_release_id": "83673115",
+      "mlc_command": "mlcr make,go,pdf,_go-cse,_tifr"
+    },
+    {
+      "name": "GATE Overflow for UGC NET CSE",
+      "variant": "go-cse,ugcnet",
+      "exam": "UGC NET CSE",
+      "html_file": "book_filter6.html",
+      "pdf_file": "ugcnet.pdf",
+      "pdf_with_cover": "ugcnet_w_cover.pdf",
+      "cover_file": "ugcnet-cse-cover.pdf",
+      "release_tag": "ugcnet",
+      "github_release_id": "83673193",
+      "mlc_command": "mlcr make,go,pdf,_go-cse,_ugcnet"
+    }
+  ],
+  "html_folder": "gate_overflow_for_gate_cse",
+  "notes": [
+    "HTML files are downloaded via 'mlcr get,go,html' (requires rclone access) or from GitHub release assets.",
+    "PDFs are generated using wkhtmltopdf via 'mlcr make,go,pdf,_go-cse,_<variant>'.",
+    "Run 'mlcr script,get,go,cse,data' to download all GATE CSE HTML and PDF files into this data/ folder."
+  ]
+}

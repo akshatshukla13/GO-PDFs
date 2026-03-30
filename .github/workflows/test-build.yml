@@ -33,4 +33,28 @@ jobs:
       run: |
         #mlcr download,file --url=https://github.com/GATEOverflow/GO-PDFs/releases/download/ugcnet/book_filter6.html
         mlcr make,go,pdf,${{ matrix.book }} -v --quiet --skip_cover
+
+  get-go-cse-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install mlc-scripts
+      run: |
+        pip install mlc-scripts
+        mlc pull repo gateoverflow@go-pdfs
+
+    - name: Download GATE CSE data files into data/
+      run: |
+        mlcr get,go,cse,data --output_path=data
+
+    - name: Upload data folder as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: gate-cse-data
+        path: data/
       
