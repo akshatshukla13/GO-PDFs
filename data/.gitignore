@@ -1,0 +1,5 @@
+# HTML files are large and generated at runtime by the get-go-cse-data script
+*.html
+
+# PDF files are generated at runtime by the make-go-pdf script
+*.pdf
